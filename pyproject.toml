@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "sda-excellent-planner"
+version = "0.1.0"
+description = ""
+authors = ["silox <edruisl99@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+google-api-python-client = "^2.139.0"
+google-auth-httplib2 = "^0.2.0"
+google-auth-oauthlib = "^1.2.1"
+python-dotenv = "^1.0.1"
+oauth2client = "^4.1.3"
+pytz = "^2024.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
