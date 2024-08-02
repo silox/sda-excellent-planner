@@ -32,7 +32,7 @@ class GoogleCalendarService(BaseService):
                 },
             }
             event_result = self.service.events().insert(calendarId='primary', body=event).execute()
-            logger.info(f'Successfully created event: {event_result.get('htmlLink')}')
+            logger.info(f'Successfully created event: {event_result.get("htmlLink")}')
 
         except HttpError as error:
             logger.exception(f'An error occurred while inserting event to Google Calendars: {error}')
